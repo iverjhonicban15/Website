@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">FoodChoices logo</title>
+  <desc id="desc">A sky-blue plate with a friendly fork and spoon and a small fresh leaf.</desc>
+  <defs>
+    <linearGradient id="sky" x1="14" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75d7fb"/>
+      <stop offset="1" stop-color="#258fc9"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="34" fill="url(#sky)"/>
+  <circle cx="64" cy="66" r="37" fill="none" stroke="#fff" stroke-width="5" opacity=".96"/>
+  <circle cx="64" cy="66" r="27" fill="none" stroke="#fff" stroke-width="2.5" opacity=".55"/>
+  <path d="M26 27v18m-6-18v10m12-10v10m-6 8v48" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M102 27c-7 7-10 15-10 24 0 6 3 10 8 11v39" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M78 32c-2 10-1 18 2 24" fill="none" stroke="#baf2dc" stroke-linecap="round" stroke-width="4"/>
+  <path d="M77 34c-7-8-16-7-19-6 2 8 9 13 18 12" fill="#d8ffe9"/>
+</svg>
