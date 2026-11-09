@@ -3,180 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodChoices | Restaurant Menu Information Board</title>
+    <meta name="theme-color" content="#53b8ef" />
+    <title>FoodChoices | Daet, Camarines Norte</title>
     <meta
       name="description"
-      content="FoodChoices Restaurant Menu Information Board in Daet, Camarines Norte. Rainbow-inspired menu website for a vibrant dining experience."
+      content="Explore the FoodChoices restaurant menu information board in Daet, Camarines Norte. Scan the QR code to share the menu."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="brand-wrap">
-          <div class="brand-mark">FC</div>
-          <div>
-            <p class="brand-name">FoodChoices</p>
-            <p class="brand-tag">Daet, Camarines Norte</p>
-          </div>
-        </div>
-
+        <a class="brand-wrap" href="#home" aria-label="FoodChoices home">
+          <span class="brand-mark" aria-hidden="true">FC</span>
+          <span>
+            <span class="brand-name">FoodChoices</span>
+            <span class="brand-tag">Daet, Camarines Norte</span>
+          </span>
+        </a>
         <nav class="nav" aria-label="Main navigation">
           <a href="#menu">Menu</a>
-          <a href="#features">Features</a>
+          <a href="#features">Highlights</a>
+          <a href="#share">Scan &amp; share</a>
           <a href="#about">About</a>
         </nav>
       </header>
 
-      <main>
+      <main id="home">
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Rainbow Taste • Fresh Flavor • Warm Welcome</p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Good food, good choices</p>
             <h1>FoodChoices</h1>
-            <h2>Restaurant Menu Information Board</h2>
+            <h2>Restaurant Menu<br />Information Board</h2>
             <p class="intro">
-              A colorful dining experience inspired by the vibrant spirit of Daet,
-              Camarines Norte — perfect for family meals, lunch breaks, and happy
-              cravings.
+              Find your next favorite in Daet, Camarines Norte. Browse comforting
+              Filipino-inspired meals, refreshing drinks, and sweet treats—all in one place.
             </p>
-
             <div class="cta-row">
-              <a class="primary-btn" href="#menu">View Menu</a>
-              <a class="secondary-btn" href="#about">Our Story</a>
+              <a class="primary-btn" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+              <a class="secondary-btn" href="#share">Scan our QR code</a>
             </div>
+            <p class="location-note"><span aria-hidden="true">⌖</span> Proudly serving Daet, Camarines Norte</p>
           </div>
 
-          <div class="hero-panel">
-            <div class="panel-badge">Today's Favorite</div>
-            <h3>Chef's Picks</h3>
+          <aside class="hero-panel" aria-label="Today's featured dishes">
+            <div class="panel-topline"><span class="status-dot"></span> A little something special</div>
+            <div class="plate-art" aria-hidden="true"><span>🍛</span></div>
+            <p class="panel-label">Today's picks</p>
+            <h3>Made for your cravings</h3>
             <ul class="favorite-list">
-              <li>Bicol Express Rice Bowl</li>
-              <li>Rainbow Fruit Shake</li>
-              <li>Grilled Chicken Combo</li>
-              <li>Halo-Halo Supreme</li>
+              <li><span>01</span> Bicol Express Rice Bowl</li>
+              <li><span>02</span> Grilled Chicken Combo</li>
+              <li><span>03</span> Halo-Halo Supreme</li>
             </ul>
-            <div class="live-date">
-              <span>Open Today</span>
-              <strong id="todayDate">Loading...</strong>
-            </div>
-          </div>
+            <div class="live-date"><span>Today is</span><strong id="todayDate">Loading…</strong></div>
+          </aside>
         </section>
 
-        <section class="stats" id="features">
-          <div class="stat-box">
-            <span>25+</span>
-            <p>Signature Dishes</p>
-          </div>
-          <div class="stat-box">
-            <span>Fresh</span>
-            <p>Local Ingredients</p>
-          </div>
-          <div class="stat-box">
-            <span>Family</span>
-            <p>Friendly Service</p>
-          </div>
-          <div class="stat-box">
-            <span>7 AM</span>
-            <p>Open Daily</p>
-          </div>
+        <section class="stats" id="features" aria-label="FoodChoices highlights">
+          <div class="stat-box"><span class="stat-icon" aria-hidden="true">✦</span><div><strong>Made with care</strong><p>Comforting favorites</p></div></div>
+          <div class="stat-box"><span class="stat-icon" aria-hidden="true">⌖</span><div><strong>Locally inspired</strong><p>From Daet with love</p></div></div>
+          <div class="stat-box"><span class="stat-icon" aria-hidden="true">♡</span><div><strong>For everyone</strong><p>Find your new favorite</p></div></div>
         </section>
 
         <section class="menu-section" id="menu">
           <div class="section-header">
-            <p class="eyebrow">Menu Highlights</p>
-            <h3>Delicious Eats For Every Mood</h3>
+            <div><p class="eyebrow">A taste of FoodChoices</p><h3>What sounds good today?</h3></div>
+            <p class="section-description">Tap a dish to give it a little highlight.</p>
           </div>
-
           <div class="menu-grid">
             <article class="menu-item appetizer">
-              <span class="tag">Appetizer</span>
-              <h4>Calamares Crunch</h4>
+              <div class="dish-art art-coral" aria-hidden="true">🥢</div>
+              <span class="tag">Appetizer</span><h4>Calamares Crunch</h4>
               <p>Crispy squid rings served with spicy vinegar dip and garlic aioli.</p>
-              <div class="price-row">
-                <span>₱180</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="price-row"><span>₱180</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
-
             <article class="menu-item main">
-              <span class="tag">Main Course</span>
-              <h4>Bicol Express Bowl</h4>
-              <p>Rich coconut curry with pork, chili, and steamed rice.</p>
-              <div class="price-row">
-                <span>₱260</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="dish-art art-green" aria-hidden="true">🍲</div>
+              <span class="tag">Main course</span><h4>Bicol Express Bowl</h4>
+              <p>Rich coconut curry with pork, chili, and a side of steamed rice.</p>
+              <div class="price-row"><span>₱260</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
-
             <article class="menu-item main">
-              <span class="tag">Main Course</span>
-              <h4>Grilled Chicken Combo</h4>
+              <div class="dish-art art-yellow" aria-hidden="true">🍗</div>
+              <span class="tag">Main course</span><h4>Grilled Chicken Combo</h4>
               <p>Juicy grilled chicken, roasted vegetables, and savory garlic rice.</p>
-              <div class="price-row">
-                <span>₱290</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="price-row"><span>₱290</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
-
             <article class="menu-item dessert">
-              <span class="tag">Dessert</span>
-              <h4>Halo-Halo Supreme</h4>
-              <p>A colorful mix of fruits, beans, leche flan, and ice cream.</p>
-              <div class="price-row">
-                <span>₱150</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="dish-art art-pink" aria-hidden="true">🍧</div>
+              <span class="tag">Dessert</span><h4>Halo-Halo Supreme</h4>
+              <p>A colorful mix of fruits, beans, leche flan, and creamy ice cream.</p>
+              <div class="price-row"><span>₱150</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
-
             <article class="menu-item drink">
-              <span class="tag">Drink</span>
-              <h4>Rainbow Fruit Shake</h4>
-              <p>Fresh fruit sweetness blended with creamy ice and colorful flavor.</p>
-              <div class="price-row">
-                <span>₱120</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="dish-art art-blue" aria-hidden="true">🥤</div>
+              <span class="tag">Drink</span><h4>Rainbow Fruit Shake</h4>
+              <p>Fresh fruit blended with creamy ice for a cool, cheerful treat.</p>
+              <div class="price-row"><span>₱120</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
-
             <article class="menu-item dessert">
-              <span class="tag">Dessert</span>
-              <h4>Leche Flan Slice</h4>
-              <p>Velvety caramel custard made with local dairy and pure sweetness.</p>
-              <div class="price-row">
-                <span>₱110</span>
-                <button type="button">Try This</button>
-              </div>
+              <div class="dish-art art-cream" aria-hidden="true">🍮</div>
+              <span class="tag">Dessert</span><h4>Leche Flan Slice</h4>
+              <p>Silky caramel custard with a golden layer of homemade sweetness.</p>
+              <div class="price-row"><span>₱110</span><button type="button" aria-pressed="false">Choose dish <span aria-hidden="true">↗</span></button></div>
             </article>
+          </div>
+          <p class="menu-note">Menu items and prices are sample selections for this information board.</p>
+        </section>
+
+        <section class="share-section" id="share">
+          <div class="share-copy">
+            <p class="eyebrow">The menu, one scan away</p>
+            <h3>Share FoodChoices<br />with a quick scan.</h3>
+            <p>Scan this code with your phone camera to open this menu board. The QR code updates to the current page address.</p>
+            <a class="text-link" href="#menu">Back to the menu <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="qr-card">
+            <div class="qr-frame"><img id="menuQr" alt="QR code linking to the FoodChoices menu page" width="220" height="220" /><span class="qr-loading" id="qrLoading">Preparing your QR code…</span></div>
+            <p class="qr-caption">SCAN TO VIEW MENU</p>
+            <a id="qrDownload" class="download-link" href="#" target="_blank" rel="noopener noreferrer">Open QR image ↗</a>
           </div>
         </section>
 
         <section class="about-section" id="about">
-          <div class="info-card">
-            <p class="eyebrow">Why FoodChoices?</p>
-            <h3>Every dish tells a story.</h3>
-            <p>
-              FoodChoices celebrates the lively flavors of the Philippines with a
-              colorful twist. Our menu is designed to bring people together over
-              comforting bowls, refreshing drinks, and heartwarming desserts.
-            </p>
+          <div class="info-card story-card">
+            <p class="eyebrow">A warm welcome</p>
+            <h3>Every good day deserves good food.</h3>
+            <p>FoodChoices is a restaurant menu information board concept for Daet, Camarines Norte—bringing favorite flavors and easy-to-browse menu details together in a bright, friendly space.</p>
           </div>
-
-          <div class="info-card accent-card">
-            <p class="eyebrow">Creator</p>
-            <h3>Iverjhon Icban</h3>
-            <p>BSIT 1-1A</p>
-            <p class="mini-note">Built with creativity, color, and dedication.</p>
+          <div class="info-card creator-card">
+            <span class="creator-mark" aria-hidden="true">IC</span>
+            <div><p class="eyebrow">Made by</p><h3>Iverjhon Icban</h3><p class="course-label">BSIT 1-1A</p></div>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-        <p>FoodChoices Restaurant Menu Information Board</p>
-        <p>Created by: Iverjhon Icban | BSIT 1-1A</p>
-      </footer>
+      <footer class="footer"><a class="footer-brand" href="#home">FoodChoices<span> · Daet, Camarines Norte</span></a><p>Created by Iverjhon Icban · BSIT 1-1A</p></footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
-
